@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑萤科技官方网站-黑萤矿机_家用ipfs矿机_黑萤矿池云节点</title>
+    <meta name="description" content="黑萤科技主营黑萤矿机,一款家用ipfs挖矿设备,回本最快的ipfs家用矿机,更有收益更高效率更快的黑萤矿池云节点。" />
+    <meta name="keywords" content="家用ipfs矿机,黑萤矿机矿池云节点,黑萤科技" />
+    <script src="/msite.baidu.com/sdk/c.js?appid=1606493384976605"></script>
+    <link rel="canonical" href="http://172.31.35.167:81/heiyingkeji" />
+    <link href="Content/css/style.css" rel="stylesheet" />
+    <link href="Content/js/layui/css/layui.css" rel="stylesheet" />
+    <script src="Content/js/jquery-1.11.0.min.js"></script>
+    <script src="Content/js/jquery.SuperSlide.2.1.2.js"></script>
+    <script src="Content/js/common.js"></script>
+    <script src="Content/js/layui/lay/dest/layui.all.js"></script>
+	<script src="Content/js/dict.js"></script>
+</head>
+<body>
+    <div class="header">
+    	
+        <div class="info">
+            <div class="pull-left logo">
+                <a href=""><img src="Content/img/logo_new.png" /></a>
+            </div>
+            <div class="pull-right link">
+                <ul>
+                    <li><a href="ipfs.html" class="nav1">首页</a></li><!-- selected-->
+                    <li><a href="kuangji.html" class="nav2">芯矿机</a></li>
+                    <li><a href="kuangchi.html" class="nav3">私有云服务器</a></li>
+                    <li><a href="aboutus.html" class="nav6">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="nav-content-right">
+                <div class="faq-like">
+                    <ul class="top-mg-ul">
+                        <li class="top-login"><a href="javascript:void(0);" class="theme-login" onclick="show_login()">登录</a> </li>
+                        <li style=" color:#fff; margin:0 5px;">/</li>
+                        <li class="top-register"><a href="javascript:void(0);" class="theme-register" onclick="show_register()">注册</a> </li>
+                    </ul>
+                    <ul class="top-mg-user">
+                        <li class="top-user">
+                            <a href="Account/personal"><img src="Content/img/a2_03.png" /><span class="username"></span></a>
+                            <span class="jt">
+                                <div class="out_login">退出登录</div>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="top-mg-cart">
+                        <li class="top-cart">
+                            <img src="Content/img/cart_new.png" width="16" height="16" title="购物车" alt="购物车" />
+                            <div class="user_cart_number">0</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top-language">
+                <a href="javascript:;" class="language-box">
+                    多语言
+                    <img class="top_down" src="Content/img/top-jt-b.png" />
+                </a>
+                <dl class="down-menu">
+                    <dd>
+                        <a href="javascript:void(0);" onclick="changeLanguage('zh')">简体中文</a>
+                    </dd>
+                    <hr>
+                    <dd>
+                        <a href="javascript:void(0);" onclick="changeLanguage('tw')">繁体中文</a>
+                    </dd>
+                    <hr
+                    <dd>
+                        <a href="javascript:void(0);" onclick="changeLanguage('en')">English</a>
+                    </dd>
+
+                </dl>
+            </div>
+        </div>
+    </div>
+    
+
+
+<div class="banner">
+    <img src="Content/img/about_new.jpg" width="100%" />
+</div>
+<div class="about">  
+    <div class="title">深圳黑萤科技有限公司</div>
+    <div class="text">
+        <p>深圳黑萤科技（Black Firefly）是一家专注于区块链设备设计与研发的科技公司，其核心团队成员有来自于腾讯、OPPO、华为、航天华拓等国内科技独角兽公司，在智能硬件、软件、Linux系统、服务器开发等方面有着深厚的软硬件技术研发和产品设计经验。</p>
+        <p style="margin-top:10px;">
+            &nbsp;&nbsp;&nbsp;&nbsp; 2018年，黑萤科技获得了IPFS.Fund的战略投资。当前，黑萤科技重点面向IPFS生态，结合自身的技术沉淀与IPFS.Fund长期以来对IPFS的专注研究和深刻理解，通过矿机、节点、矿场的研发设计，为整个IPFS网络提供基础层的支持与保障。
+            我们的目标是建设更丰富、更有趣、更靠谱的区块链生态。
+            公司大本营位于深圳，并在北京、厦门等设有分支机构。
+        </p>
+    </div>
+</div>
+
+
+    <div class="footer">
+        
+    </div>
+    
+    <script>
+    	$(function(){
+        	$(".header").load("header.html");
+        	$(".footer").load("footer.html");			
+    	});
+		window.onload = function() {
+			$(".selected").removeClass("selected");
+			$(".nav6").addClass("selected")
+		}
+	</script>
+
+    <script>
+        $(function () {
+            //根據cookie切換語言種類
+            if (getCookie("somoveLanguage") == "en") {
+                var resultTop = setEnglish($(".header").html());
+                $(".header").html(resultTop);
+                $(".top-mg-ul").css("margin-left", "107px");
+                $(".theme-register").css("width", "60px");
+                $(".header .link ul li").css("margin-left", "28px");
+                $(".nav-content-right").css("margin-right", "102px");
+                $(".fixed_nva").css("left", "32px");
+
+                var resultFooter = setEnglish($(".footer").html());
+                $(".footer").html(resultFooter);
+            }
+
+            if (getCookie("somoveLanguage") == "tw") {
+                var result = setFanti($(".header").html());
+                $(".header").html(result);
+
+                var resultFooter = setFanti($(".footer").html());
+                $(".footer").html(resultFooter);
+            }
+
+            if (userId != null) {
+                $('.top-mg-ul').hide();
+                $('.top-mg-user').show();
+                $('.top-mg-user .username').text(userName.substr(0,6));
+            }
+
+            //注册
+            $('.btn-register').click(function () {
+                var param = {};
+                var account = $('#register_phone').val();
+                var code = $('#register_code').val();
+                if (account == '') {
+                    layer.alert('请输入手机号/邮箱地址！', { icon: 2 });
+                    return;
+                }
+                if (code == '') {
+                    layer.alert('请输入验证码', { icon: 2 });
+                    return;
+                }
+                var regMobile = /^1[23456789]\d{9}$/;
+                var regEmail=/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
+                var reg = /[@]/gi;
+                if (reg.test(account)) {
+                    if (!regEmail.test(account)) {
+                        layer.alert('请输入正确的邮箱', { icon: 2 });
+                        return;
+                    }
+                    param.phone = "";
+                    param.email = account;
+                } else {
+                    if (!regMobile.test(account)) {
+                        layer.alert('请输入正确的手机号', { icon: 2 });
+                        return;
+                    }
+                    param.phone = account;
+                    param.email = "";
+                }
+
+                param.code = code;
+                $.ajax({
+                    type: "POST",
+                    url: "Account/Register",
+                    data: param,
+                    cache: false,
+                    dataType: "json",
+                    success: function (msg) {
+                        if (msg.code == 0) {
+                            window.location.reload();
+                        }
+                        else {
+                            alert(msg.msg);
+                        }
+
+                    },
+                    error: function () {
+                        layer.alert('注册失败', { icon: 2 });
+                    }
+                });
+            });
+
+            //登录
+            $('.btn-login').click(function () {
+                var param = {};
+                var account = $('#login_phone').val();
+                var code = $('#login_code').val();
+                param.code = code;
+                if (account == '') {
+                    layer.alert('请输入手机号//邮箱地址！', { icon: 2 });
+                    return;
+                }
+                if (code == '') {
+                    layer.alert('请输入验证码', { icon: 2 });
+                    return;
+                }
+                var regMobile = /^1[23456789]\d{9}$/;
+                var regEmail = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
+                var reg = /[@]/gi;
+                if (reg.test(account)) {
+                    if (!regEmail.test(account)) {
+                        layer.alert('请输入正确的邮箱', { icon: 2 });
+                        return;
+                    }
+                    param.phone = "";
+                    param.email = account;
+                } else {
+                    if (!regMobile.test(account)) {
+                        layer.alert('请输入正确的手机号', { icon: 2 });
+                        return;
+                    }
+                    param.phone = account;
+                    param.email = "";
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "Account/Login",
+                    data: param,
+                    cache: false,
+                    dataType: "json",
+                    beforeSend: function () {
+                        $(this).val("登陆中...");
+                        $(this).attr("disabled", true);
+                    },
+                    success: function (msg) {
+                        if (msg.code == 0) {
+                            window.location.reload();
+                        } else {
+                            layer.alert(msg.msg, { icon: 2 });
+                        }
+                    },
+                    complete: function (XMLHttpRequest, textStatus) {
+                        $(this).val("登录");
+                        $(this).attr("disabled", false);
+                    },
+                    error: function () {
+                        layer.alert('登陆失败！', { icon: 2 });
+                    }
+                });
+            });
+
+            //退出登录
+            $('.out_login').click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "Account/outLogin",
+                    cache: false,
+                    dataType: "json",
+                    success: function (msg) {
+                        if (msg.code == 0) {
+                            window.location.href = "Home/Index";
+                        }
+                    }
+                });
+            });
+
+            //购物车列表
+            if (userId != null) {
+                //$.ajax({
+                //    type: "GET",
+                //    url: interfaceURL + "shopOrderApp/getShoppingcart.action?userId=" + userId + "",
+                //    contentType: 'application/json',
+                //    async: false,
+                //    success: function (msg) {
+                //        if (msg.error == 0) {
+                //            if (msg.orderList.length > 0) {
+                //                $('.user_cart_number').show();
+                //                $('.user_cart_number').html(msg.orderList.length);
+                //            }
+                //            else {
+                //                $('.user_cart_number').hide();
+                //            }
+                //        }
+                //        else {
+                //            alert(msg.msg);
+                //        }
+                //    }
+                //});
+            }
+
+            //购物车
+            $('.top-cart').click(function () {
+                if (userId == null) {
+                    show_login();
+                    return;
+                }
+                else {
+                    window.location.href = "Account/cart";
+                }
+            });
+        });
+
+        //切换语言
+        function changeLanguage(v) {
+            window.location.reload();
+            delCookie("somoveLanguage");
+            setCookie("somoveLanguage", v);
+            if (v == "en") {
+                var resultTop = setEnglish($(".header").html());
+                $(".header").html(resultTop);
+                $(".top-mg-ul").css("margin-left", "107px");
+                $(".theme-register").css("width", "60px");
+                $(".header .link ul li").css("margin-left", "28px");
+                $(".nav-content-right").css("margin-right", "102px");
+                $(".fixed_nva").css("left", "32px");
+
+                var resultFooter = setEnglish($(".footer").html());
+                $(".footer").html(resultFooter);
+            }
+
+            if (v == "tw"){
+                var result = setFanti($(".header").html());
+                $(".header").html(result);
+
+                var resultFooter = setFanti($(".footer").html());
+                $(".footer").html(resultFooter);
+            }
+        }
+
+        //百度链接自动推送
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+
+        //百度统计
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?104bbb1b3c21ed9a5f0a7957e2a374b6";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+</html>
