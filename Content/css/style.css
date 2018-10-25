@@ -100,8 +100,8 @@ body {font-size: 14px; font-family: MicrosoftYaHei; word-break: break-all; color
 .index .black_ms .ms_buy{text-align:center;margin-top:20px;}
 .index .black_ms .ms_buy .bttn{display:inline-block;width:100px;height:36px;line-height:36px;border-radius:4px;border:1px solid #0094f3;font-size:16px;color:#0094f3;cursor:pointer;}
 .index .black_ms .ms_buy .bttn:hover{color:#fff;background:#0094f3;}
-.index .black_ms .ms_pic{text-align:center;margin-top:18px;}
-.index .black_ms .ms_pic img{border-radius:50%;}
+.index .black_ms .ms_pic{text-align:center;margin-top:18px;margin-bottom: 30px;}
+/*<!--.index .black_ms .ms_pic img{border-radius:50%;}-->*/
 
 .index .black_introduce{width:100%;min-width:1220px;overflow:hidden;position:relative; background-color:#141517;}
 .index .black_introduce .box_img{width:100%; margin-top: 40px;}
@@ -116,9 +116,9 @@ body {font-size: 14px; font-family: MicrosoftYaHei; word-break: break-all; color
 .index .black_introduce .black_introduce_box .introduce_buy .bttn{display:inline-block;width:100px;height:36px;line-height:36px;border-radius:4px;border:1px solid #fff;font-size:16px;color:#fff;cursor:pointer;}
 .index .black_introduce .black_introduce_box .introduce_buy .bttn:hover{background:#fff;color:#000;}
 
-.black_news{width:100%;min-width:1220px;background:#F5F5F5;padding-bottom: 30px;}
-.black_news ul{margin:auto;width:900px;overflow:hidden;padding-bottom:20px;}
-.black_news ul li {margin-top:50px;float:left;}
+.black_news{width:100%;min-width:1220px;background:#F5F5F5;padding-bottom: 50px;padding-top: 50px;}
+.black_news ul{margin:auto;width:900px;overflow:hidden;padding-bottom:20px; font-size:20px;}
+.black_news ul li {margin-top:15px;float:left;font-size:16px;}
 .black_news ul li.marginleft{margin-left:60px;}
 .black_news ul li:hover {box-shadow: 0px 10px 10px #dfdfdf;}
 .black_news ul li p{width:260px;padding:10px;background:#fff;height:60px;}
