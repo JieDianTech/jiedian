@@ -79,10 +79,10 @@ body {font-size: 14px; font-family: MicrosoftYaHei; word-break: break-all; color
 .index {width:100%;min-width:1220px; margin: auto; }
 .index .black_bfos{width:100%;min-width:1220px; background-color:#141517; color:#fff;}
 .index .black_bfos .bfos_grey1{ text-align:center;font-size:26px;font-weight:bold; padding-top: 48px;color:white}
-.index .black_bfos .bfos_grey2{ text-align:center;font-size:26px;font-weight:bold; padding-top: 28px;color:#ddd;margin-bottom: 10px}
-.index .black_bfos .bfos_title{ text-align:center;font-size:20px;font-weight:bold; padding-top: 18px;color:#bbb}
+.index .black_bfos .bfos_grey2{ text-align:center;font-size:26px;font-weight:bold; padding-top: 28px;color:#eee;margin-bottom: 10px}
+.index .black_bfos .bfos_title{ text-align:center;font-size:18px;font-weight:bold; padding-top: 15px;color:#ccc}
 .index .black_bfos .bfos_info{ text-align:center;font-size:18px;font-weight:bold;color:#bbb;width:100%;margin-top: 10px;}
-.index .black_bfos .bfos_desc{text-align:center;margin-top:17px;}
+.index .black_bfos .bfos_desc{text-align:center;margin-top:22px;}
 .index .black_bfos .bfos_desc ul{display:inline-block;}
 .index .black_bfos .bfos_desc ul li{float:left;font-size:16px;padding: 0px 15px; }
 .index .black_bfos .bfos_desc ul li+li{border-left:1px solid #fff; }
