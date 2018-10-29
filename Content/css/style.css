@@ -185,7 +185,7 @@ body {font-size: 14px; font-family: MicrosoftYaHei; word-break: break-all; color
 .calculation .describe .describe_other .o_img{text-align:center;}
 .calculation .describe .describe_other .o_title2{line-height:40px;height:40px;text-align:center;font-size:14px;color:#000000;}
 
-.calculation_info{width: 100%; margin-top: 30px; padding:0px 0 30px 0; background-color:#fff; overflow: hidden;}
+.calculation_info{width: 1220px; margin-top: 30px; padding:0px 0 30px 0; background-color:#fff; overflow: hidden;}
 .calculation_info .title{width: 1220px; line-height: 50px; margin: 20px auto auto auto; font-size: 18px; color:#333;}
 .calculation_info .content{width: 1220px; margin: auto; padding:10px 15px; line-height: 30px; background-color:#fff;}
 .calculation_info .content .li{line-height: 25px; color:#999; font-size:12px;}
@@ -408,7 +408,7 @@ body {font-size: 14px; font-family: MicrosoftYaHei; word-break: break-all; color
 .about .text{ line-height:35px;margin:auto; margin-top:57px; font-size: 14px;width:694px;}
 
 /*APP下载*/
-.downloadbanner{width: 100%; min-width: 1220px; position: relative;}
+.downloadbanner{width: 100%; min-width: 800px; position: relative;}
 .downloadbanner img{width: 100%;}
 .downloadbanner .explain{width: 100%; position: absolute; bottom: 0; left: 0;}
 .downloadbanner .explain .info{width: 846px; margin: auto; color: #fff; text-align: left; font-size: 14px;}
