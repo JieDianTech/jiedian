@@ -1,0 +1,244 @@
+<html dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="always">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://webapi.pipipan.com/assets/js/jquery.min.js?v=20191009"></script>
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>一起来挖矿</title>
+    <link rel="icon" href="x-icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="x-icon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#ffffff">
+    <script type="text/javascript">
+        var usrid = this.getUrlValue('usrid');
+        if (isEmpty(usrid)) {
+            usrid = 'oeuIhv7aSAcPr3HsAoXsUMlkq0Go';//演示数据
+        }
+        var usrdata;
+        window.onload = function () {
+            $.ajax({
+                url: "http://www.btcat.cn/wx/" + usrid + ".json",
+                type: "get",
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    usrdata = data;
+                    showData(data);
+                },
+                error: function (msg) {
+                    alert("ajax连接异常：" + msg);
+                }
+            });
+
+        }
+        function showData(data) {
+            //用户名
+            var usrName = $('#usr-name');
+            usrName.append(data.name)
+            //显卡数量
+            var sumGPU = $('#gpu-num');
+            var onlineGPU = $('#gpu-online');
+            sumGPU.append(data.gpunum + "台")
+            onlineGPU.append("在线：" + data.gpunum + "台")
+            //收益数据
+            var historyData = $('#history-data');
+            var profits = data.profits;
+            for (var i = profits.length - 1; i > profits.length - 8; i--) {
+                if (i < 0) break;
+                var str = "<p class='fs--1 mb-0'>" + profits[i].date + "  ¥" + profits[i].profit + "  否 " + "</p>";
+                historyData.append(str);
+            }
+            historyData.append("......");
+            //历史事件
+            var historyEvents = $('#history-events');
+            var historys = data.history;
+            for (var i = 0; i < historys.length; i++) {
+                var str = "<p class='fs--1 mb-0'>" + historys[i] + "</p>";
+                historyEvents.append(str);
+            }
+            //累计收益paid-profit
+            var paidProfit = $('#paid-profit');
+            paidProfit.append(data.paid + "元")
+            var sumProfits = $('#sum-profits');
+            var sum = 0;
+            for (var j = 0; j < profits.length; j++) {
+                sum += profits[j].profit;
+            }
+            sumProfits.append(sum.toFixed(2) + "元（总收益）")
+        }
+        function see_more(my) {
+            console.log(my.textContent + ", " + my.name)
+            var historyData = $('#history-data');
+            historyData.empty();
+            var profits = usrdata.profits;
+            if (my.textContent.indexOf("更多") != -1) {
+                my.textContent = "收起";
+                for (var i = profits.length - 1; i > 0; i--) {
+                    var paidStr = profits[i].paid ? "  是 " + "</p>" : "  否 " + "</p>";
+                    var str = "<p class='fs--1 mb-0'>" + profits[i].date + "  ¥" + profits[i].profit + paidStr;
+                    historyData.append(str);
+                }
+            } else {
+                my.textContent = "查看更多";
+                for (var i = profits.length - 1; i > profits.length - 8; i--) {
+                    if (i < 0) break;
+                    var paidStr = profits[i].paid ? "  是 " + "</p>" : "  否 " + "</p>";
+                    var str = "<p class='fs--1 mb-0'>" + profits[i].date + "  ¥" + profits[i].profit + paidStr;
+                    historyData.append(str);
+                }
+            }
+
+        }
+        //http://localhost/oeuIhv3vMeXBc3vVfOYqKlC5akGo.html
+        function GetUrlRelativePath() {
+            var url = document.location.toString();
+            var arrUrl = url.split("//");
+            var start = arrUrl[1].indexOf("/");
+            var end = arrUrl[1].indexOf(".html");
+            var relUrl = arrUrl[1].substring(start + 1, end);
+            if (relUrl.indexOf("?") != -1) {
+                relUrl = relUrl.split("?")[0];
+            }
+            console.log(relUrl)
+            return relUrl;
+        }
+        //截取url中的参数
+        function getUrlValue(kValue) {
+            var url = window.location.href;  //当前页面的地址
+            var reg = /([^?&=]+)=([^?&=]+)/g, obj = {}, str = url;
+            url.replace(reg, function () {
+                obj[arguments[1]] = arguments[2];
+            })
+            for (var keyName in obj) {
+                if (keyName == kValue) {
+                    return obj[keyName];
+                    // break;
+                }
+            }
+        }
+        //判断字符是否为空的方法
+        function isEmpty(obj) {
+            if (typeof obj == "undefined" || obj == null || obj == "") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <style>
+        .box4 {
+            position: absolute;
+        }
+    </style>
+    <link
+        href="https://webapi.pipipan.com/assets/lib/datatables.net-responsive-bs4/responsive.bootstrap4.css?v=20191009"
+        rel="stylesheet">
+    <link href="https://webapi.pipipan.com/assets/css/theme.css?v=20191009" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="main-content">
+            <div class="box4">
+                    <a href="http://www.btcat.cn">
+                        《一起来
+                    </a>
+                </div>
+        <div class="container" style="margin-top: 10px;">
+            
+            <center>
+                <h5 class="text-black mb-2 right" id="usr-name"></h5>
+            </center>
+            <div class="content" style="margin-top: 20px;">
+                <div class="card mb-3">
+                    <div class="card-body rounded-soft bg-gradient">
+                        <div class="row text-white align-items-center no-gutters">
+                            <div class="col">
+                                <h4 class="text-white mb-2" id="gpu-online"></h4>
+                                <p class="fs--1 mb-1" id="gpu-num">
+                                    <span class="text-300 mr-1">矿机总数：</span>
+                                </p>
+                                <a class="btn btn-info btn-sm" rv-href="file.file_dir" rv-hide="file.global"
+                                    style="position: absolute;bottom: 0px;right: 0px;"
+                                    href="/dir/235978-35868196-1575283709-6eac2968875c5a6b">查看机器</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card bg-light mb-3">
+                    <div class="card-body p-3">
+                        <div class="row justify-content-center justify-content-sm-between">
+                            <div class="col-sm-auto text-center" id="history-events">
+                                <p class="fs--1 mb-0">历史事件：</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-deck" rv-hide="file.is_vip">
+                    <div class="card mb-3 overflow-hidden" style="min-width: 12rem">
+                        <div class="bg-holder bg-card"
+                            style="background-image:url(https://webapi.400gb.com/assets/img/illustrations/corner-1.png);">
+                        </div>
+
+                        <div class="card-body position-relative">
+                            <h5>已支付：<span id="paid-profit" class="badge badge-soft-warning rounded-capsule ml-2"></span>
+                            </h5>
+                            <div id="sum-profits" class="display-4 fs-1 mt-3 font-weight-normal text-warning"></div>
+                            <button class="btn btn-outline-secondary"
+                                style="position: absolute;bottom: 14px;right: 14px; padding: 1px 6px;"
+                                onclick="file_down( 1, 0)">更多收益</button>
+                        </div>
+                    </div>
+                    <div class="card bg-light mb-3">
+                        <div class="card-body p-3">
+                            <div class="row justify-content-center justify-content-sm-between">
+                                <div class="col-sm-auto text-center" id="history-data">
+                                    <p class="fs--1 mb-0">收益到账：</p>
+                                </div>
+                                <button class="btn btn-falcon-success mr-1 mb-1" type="button" id="see-more"
+                                    onclick="see_more(this)">
+                                    查看更多
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 overflow-hidden" style="min-width: 12rem">
+                        <div class="bg-holder bg-card"
+                            style="background-image:url(https://webapi.400gb.com/assets/img/illustrations/corner-2.png);">
+                        </div>
+                        <div class="card-body position-relative">
+                            <h5>本周排名：<span class="badge badge-soft-info rounded-capsule ml-2">第3位</span></h5>
+                            <div class="display-4 fs-0 mt-3 font-weight-normal text-info">距离第一差：10台矿机</div>
+                            <button class="btn btn-outline-info"
+                                style="position: absolute;bottom: 14px;right: 14px; padding: 1px 6px;"
+                                onclick="file_down( 1, 1)">浏览广场</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="col-12 col-sm-auto text-center">
+            <p><h6> 邮箱：<a href="mailto:service@btcat.cn">service@btcat.cn.</h6></a></p>
+            <p class="mb-0 text-600">《一起来》 2018 © All right reserved.</p>
+            <br class="d-sm-none">
+        </div>
+    </footer>
+</body>
+
+</html>

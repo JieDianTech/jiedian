@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, user-scalabel=no">
+    <title>一起来做主节点_一站式家用分布节点平台_云节点服务器_上百个masternode币</title>
+    <meta name="description" content="芯糖科技主营芯机，一款家用云节点设备，未来支持上千种POS公链一键部署节点软件。包括Ulord等" />
+    <meta name="keywords" content="云节点服务器,硬件节点,Ulord,芯糖科技,POS" />
+    <link rel="icon" href="Content/img/logo_new.png" />
+    <link href="Content/css/style.css" rel="stylesheet" />
+    <link href="Content/js/layui/css/layui.css" rel="stylesheet" />
+    <script src="Content/js/jquery-1.11.0.min.js"></script>
+    <script src="Content/js/jquery.SuperSlide.2.1.2.js"></script>
+    <script>
+        function goMy(params) {
+            var wxid = $('#wxid').val().trim();
+            console.log(wxid);
+            window.location.href = "http://www.btcat.cn/my.html?usrid=" + wxid;
+        }
+    </script>
+    <style type="text/css">
+        body {
+            background-color: gray;
+        }
+
+        .wrap {
+            width: 414px;
+            height: 312px;
+            border: solid rgb(238, 238, 238) 2px;
+            background-color: white;
+            text-align: center;
+            /*margin: 0px auto;*/
+        }
+
+        .wrap .title {
+            margin-top: 30px;
+            margin-bottom: 16px;
+            font-size: 20px;
+            color: rgb(51, 51, 51);
+            text-align: center;
+            /*居中*/
+
+        }
+
+        .wrap .infor {
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 36px;
+        }
+
+        .wrap .infor a {
+            text-decoration: none;
+            color: #3481cf;
+        }
+
+        .wrap #form {
+            text-align: center;
+            height: 150px;
+            width: 272px;
+            margin: 0px auto;
+        }
+
+        .wrap #form .input {
+            height: 38px;
+            width: 268px;
+            box-sizing: border-box;
+            padding: 10px;
+            padding-right: 0px;
+            margin-top: 10px;
+            margin-bottom: 17px;
+            border-radius: 3px;
+            border: solid rgb(214, 214, 21) 1px;
+        }
+
+        .wrap #form #btn {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            height: 37px;
+            width: 258px;
+            padding: 1px 7px 2px 7px;
+            box-sizing: content-box;
+            border: none;
+            background-color: rgb(136, 210, 48);
+            color: white;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+    </div>
+
+    <div class="index">
+        <div class="black_bfos">
+            <center style="padding: 100px">
+                <div class="wrap">
+                    <!--登录框的最外部的框框-->
+                    <div class="title">
+                        <!--账号密码字体存放的div-->
+                        使用合同编码登陆
+                    </div>
+                    <div class="infor">
+                        <!--第二行字存放的div-->
+                        若没有可以向<a href="mailto:service@btcat.cn">service@btcat.cn.</a>发邮件获取。
+                    </div>
+                    <div action="" id="form">
+                        <!--账号密码登录的一个from表单-->
+                        <input type="text" class="input" id="wxid" placeholder="wx_id" />
+                        <button type="button" id="btn" onclick="goMy()">登 录</button>
+                        <!--简单来讲就是一个大的方块（wrap）包含了title，infor，from三大块的信息，from中又包含了账号，密码，登录三个块块-->
+                        <p><a>先去逛逛》》</a></p>
+                    </form>
+                </div>
+            </center>
+        </div>
+        <div class="black_news">
+            <ul>
+                <b>收款方式：</b>
+            </ul>
+            <ul>
+                <li>上海筱兰信息科技有限公司 , 中国建设银行卡号 : 31050166360000002209</li>
+                <li>Omni（BTC版）USDT：15KLB2EPz5moXKccidJZ9NT5mFQ3NvqKA6</li>
+    		    <li>BTC地址：15KLB2EPz5moXKccidJZ9NT5mFQ3NvqKA6</li>
+            </ul>
+            <ul>
+                <li>付完请发送邮件到<a href="mailto:service@btcat.cn" style="color:dodgerblue">
+                        <u>service@btcat.cn</u></a>，注明交易号，txid，数量，手机号和收货地址。我们将一一核对。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+    </div>
+
+    <script>
+        $(function () {
+            $(".header").load("header.html");
+            $(".footer").load("footer.html");
+        });
+        //document.getElementsByClassName("info")
+        window.onload = function () {
+            $(".selected").removeClass("selected");
+            $(".nav1").addClass("selected")
+        }
+    </script>
+</body>
+
+</html>
