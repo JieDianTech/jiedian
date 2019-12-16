@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>一起来看收益</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        .bar-chart {
+            /* background: #fff; */
+            height: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .bar-chart .bar-chart--inner {
+            background: #333;
+            height: 100%;
+            display: block;
+            margin-bottom: 0.3rem;
+            position: relative;
+            will-change: width;
+        }
+
+        .bar-chart .bar-chart--inner:after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: " ";
+            width: 1rem;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .bar-chart[animated] .bar-chart--inner {
+            -webkit-transition: width 1.3s;
+            transition: width 1.3s;
+        }
+
+        .bar-chart.primary .bar-chart--inner {
+            background: #ff9999;
+        }
+        .bar-chart.secondary .bar-chart--inner {
+            background: #ff99cc;
+        }
+        .bar-chart.tertiary .bar-chart--inner {
+            background: #ff99ff;
+        }
+        .bar-chart.forth .bar-chart--inner {
+            background: #cc99ff;
+        }
+        .bar-chart.fifth .bar-chart--inner {
+            background: #9999ff;
+        }
+        .bar-chart.sixth .bar-chart--inner {
+            background: #99ccff;
+        }
+        .bar-chart.seventh .bar-chart--inner {
+            background: #99ffff;
+        }
+        .bar-chart.eighth .bar-chart--inner {
+            background: #99ffcc;
+        }
+        .bar-chart.nineth .bar-chart--inner {
+            background: #99ff99;
+        }
+        .bar-chart.tenth .bar-chart--inner {
+            background: #ccff99;
+        }
+        .bar-chart.eleventh .bar-chart--inner {
+            background: #ffff99;
+        }
+        .bar-chart.twelveth .bar-chart--inner {
+            background: #ffcc99;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            color: aliceblue;
+            box-sizing: inherit;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: #203848;
+            color: #fff;
+            padding: 16px;
+            font-weight: 200;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript" src="https://wow.techbrood.com/libs/jquery/jquery-2.1.1.min.js"></script>
+    <div>
+        <a href="http://www.btcat.cn" >
+            《一起来
+        </a>
+        <a href="http://www.btcat.cn/login.html" style="float: right;">
+            我的矿机
+        </a>
+    </div>
+    <div style="text-align: center;">
+        <h3>本 月 收 益 排 行</h3>
+    </div>
+    <p><span class="bar-chart--text">平均收益率：3.2%</span></p>
+    <div class="horizontal-bar">
+        <div class="bar-chart primary" data-total="99" animated>
+            <span class="bar-chart--inner" style="width:99%;"></span>
+            <span class="bar-chart--text">松江-布洛克城， 显卡数：990套，共66283.9元</span>
+        </div>
+        <div class="bar-chart secondary" data-total="82" animated>
+            <span class="bar-chart--inner" style="width:82%;"></span>
+            <span class="bar-chart--text">上海-钢达，显卡数：820套，共55330.0元</span>
+        </div>
+        <div class="bar-chart tertiary" data-total="67" animated>
+            <span class="bar-chart--inner" style="width:67%;"></span>
+            <span class="bar-chart--text">土豪-猫姐，显卡数：670套，共45228.5元</span>
+        </div>
+        <div class="bar-chart forth" data-total="53" animated>
+            <span class="bar-chart--inner" style="width:53%;"></span>
+            <span class="bar-chart--text">杭州-陈旺龙，显卡数：530套，共35775.67元</span>
+        </div>
+        <div class="bar-chart fifth" data-total="44" animated>
+            <span class="bar-chart--inner" style="width:44%;"></span>
+            <span class="bar-chart--text">上海-马老板，显卡数：440套，共29700元</span>
+        </div>
+        <div class="bar-chart sixth" data-total="20" animated>
+            <span class="bar-chart--inner" style="width:20%;"></span>
+            <span class="bar-chart--text">杭州-像素科技， 显卡数：200套，共13950.2元</span>
+        </div>
+        <div class="bar-chart seventh" data-total="4" animated>
+            <span class="bar-chart--inner" style="width:4%;"></span>
+            <span class="bar-chart--text">上海-高晓俊，显卡数：40套，共2788.63元</span>
+        </div>
+    </div>
+
+    <script>
+        var app = {
+            init: function () {
+                this.cacheDOM();
+                this.handleCharts();
+            },
+            cacheDOM: function () {
+                this.$chart = $(".bar-chart");
+            },
+            cssSelectors: {
+                chartBar: "bar-chart--inner"
+            },
+            handleCharts: function () {
+                /* 
+                    iterate through charts and grab total value
+                    then apply that to the width of the inner bar
+                */
+                $.each(this.$chart, function () {
+                    var $this = $(this),
+                        total = $this.data("total"),
+                        $targetBar = $this.find("." + app.cssSelectors.chartBar);
+                    $targetBar.css("width", "0%"); // zero out for animation
+                    setTimeout(function () {
+                        $targetBar.css("width", total + "%");
+                    }, 400);
+                });
+            }
+        }
+
+        app.init();
+    </script>
+
+</body>
+
+</html>
