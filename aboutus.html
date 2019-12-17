@@ -15,16 +15,93 @@
     <script src="Content/js/common.js"></script>
     <script src="Content/js/layui/lay/dest/layui.all.js"></script>
     <script src="Content/js/dict.js"></script>
+
+    <link href="Content/css/app.33aa95e2.css" rel="preload" as="style">
+    <link href="Content/css/chunk-vendors.3bcb6d7f.css" rel="preload" as="style">
+    <link href="Content/css/chunk-vendors.3bcb6d7f.css" rel="stylesheet">
+    <link href="Content/css/app.33aa95e2.css" rel="stylesheet">
+
+    <script>(function flexible(window, document) {
+        var docEl = document.documentElement
+        var dpr = window.devicePixelRatio || 1
+
+        // adjust body font size
+        function setBodyFontSize() {
+            if (document.body) {
+                document.body.style.fontSize = (16 * dpr) + 'px'
+            } else {
+                document.addEventListener('DOMContentLoaded', setBodyFontSize)
+            }
+        }
+
+        setBodyFontSize();
+
+        // set 1rem = viewWidth / 10
+        function setRemUnit() {
+            var rem = docEl.clientWidth / 3.75
+            docEl.style.fontSize = rem + 'px'
+        }
+
+        setRemUnit()
+
+        // reset rem unit on page resize
+        window.addEventListener('resize', setRemUnit)
+        window.addEventListener('pageshow', function (e) {
+            if (e.persisted) {
+                setRemUnit()
+            }
+        })
+    }(window, document))</script>
 </head>
 <body>
     <div class="header">
     	
     </div>
-    
-
 
 <div class="banner">
     <img src="Content/img/about_new.jpg" width="100%" />
+</div>
+<div class="more-container">
+    <div class="container">
+        <div class="status-box m-hide">
+            <div class="box">
+                <h6>已承载应用</h6>
+                <div class="content-box"><span>13</span><span class="unit">款</span></div>
+            </div>
+            <div class="box">
+                <h6>总算力值已达</h6>
+                <div class="content-box"><span>32</span><span class="unit">Mh/s</span></div>
+            </div>
+            <div class="box">
+                <h6>总存储量已达</h6>
+                <div class="content-box"><span>840</span><span class="unit">TB</span></div>
+            </div>
+            <div class="box">
+                <h6>节点数量达到</h6>
+                <div class="content-box"><span>408</span><span class="unit">个</span></div>
+            </div>
+        </div>
+        <div class="status-box-mobile m-show">
+            <div class="box">
+                <div class="content-box"><span>13</span><span class="unit">款</span></div>
+                <h6>UDFS已承载应用</h6>
+            </div>
+            <div class="box">
+                <div class="content-box"><span>32</span><span class="unit">个</span></div>
+                <h6>已享受优质存储服务的客户数量</h6>
+            </div>
+            <div class="box">
+                <div class="content-box"><span>840</span><span class="unit">TB</span></div>
+                <h6>总存储量已达</h6>
+            </div>
+            <div class="box">
+                <div class="content-box"><span>408</span><span class="unit">个</span></div>
+                <h6>节点数量达到</h6>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
 </div>
 <div class="about">  
     <div class="title">上海筱兰信息科技有限公司</div>
