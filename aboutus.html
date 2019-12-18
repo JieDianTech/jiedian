@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
@@ -9,138 +10,138 @@
     <meta name="keywords" content="云节点服务器,硬件节点,Ulord,芯糖科技,POS" />
     <link rel="icon" href="Content/img/logo_new.png" />
     <link href="Content/css/style.css" rel="stylesheet" />
-    <link href="Content/js/layui/css/layui.css" rel="stylesheet" />
     <script src="Content/js/jquery-1.11.0.min.js"></script>
     <script src="Content/js/jquery.SuperSlide.2.1.2.js"></script>
     <script src="Content/js/common.js"></script>
-    <script src="Content/js/layui/lay/dest/layui.all.js"></script>
     <script src="Content/js/dict.js"></script>
 
     <link href="Content/css/app.33aa95e2.css" rel="preload" as="style">
     <link href="Content/css/app.33aa95e2.css" rel="stylesheet">
 
     <script>(function flexible(window, document) {
-        var docEl = document.documentElement
-        var dpr = window.devicePixelRatio || 1
+            var docEl = document.documentElement
+            var dpr = window.devicePixelRatio || 1
 
-        // adjust body font size
-        function setBodyFontSize() {
-            if (document.body) {
-                document.body.style.fontSize = (16 * dpr) + 'px'
-            } else {
-                document.addEventListener('DOMContentLoaded', setBodyFontSize)
+            function setRemUnit() {
+                var rem = docEl.clientWidth / 3.75
+                docEl.style.fontSize = rem + 'px'
             }
-        }
+            setRemUnit()
 
-        setBodyFontSize();
-
-        // set 1rem = viewWidth / 10
-        function setRemUnit() {
-            var rem = docEl.clientWidth / 3.75
-            docEl.style.fontSize = rem + 'px'
-        }
-
-        setRemUnit()
-
-        // reset rem unit on page resize
-        window.addEventListener('resize', setRemUnit)
-        window.addEventListener('pageshow', function (e) {
-            if (e.persisted) {
-                setRemUnit()
-            }
-        })
-    }(window, document))</script>
+            // reset rem unit on page resize
+            window.addEventListener('resize', setRemUnit)
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    setRemUnit()
+                }
+            })
+        }(window, document))</script>
 </head>
+
 <body>
     <div class="header">
-    	
-    </div>
-
-<div class="banner">
-    <img src="Content/img/about_new_meitu_1.jpg" width="100%" />
-</div>
-<div class="more-container" style="margin-top: -200px;">
-    <div class="container">
-        <div class="status-box m-hide">
-            <div class="box">
-                <h6>已承载应用</h6>
-                <div class="content-box"><span>13</span><span class="unit">款</span></div>
-            </div>
-            <div class="box">
-                <h6>总算力值已达</h6>
-                <div class="content-box"><span>32</span><span class="unit">Mh/s</span></div>
-            </div>
-            <div class="box">
-                <h6>总存储量已达</h6>
-                <div class="content-box"><span>840</span><span class="unit">TB</span></div>
-            </div>
-            <div class="box">
-                <h6>节点数量达到</h6>
-                <div class="content-box"><span>408</span><span class="unit">个</span></div>
-            </div>
-        </div>
-        <div class="status-box-mobile m-show">
-            <div class="box">
-                <div class="content-box"><span>13</span><span class="unit">款</span></div>
-                <h6>UDFS已承载应用</h6>
-            </div>
-            <div class="box">
-                <div class="content-box"><span>32</span><span class="unit">个</span></div>
-                <h6>已享受优质存储服务的客户数量</h6>
-            </div>
-            <div class="box">
-                <div class="content-box"><span>840</span><span class="unit">TB</span></div>
-                <h6>总存储量已达</h6>
-            </div>
-            <div class="box">
-                <div class="content-box"><span>408</span><span class="unit">个</span></div>
-                <h6>节点数量达到</h6>
-            </div>
-        </div>
-        <div class="clearfix"></div>
 
     </div>
-</div>
-<div class="about">  
-    <div class="title">上海筱兰信息科技有限公司</div>
-    <div class="text">
-        <p>上海筱兰信息科技（Btcat）是一家专注于区块链设备设计与研发的科技公司，其核心团队成员有来自于腾讯、OPPO、华为、航天华拓等国内科技独角兽公司，在智能硬件、软件、Linux系统、服务器开发等方面有着深厚的软硬件技术研发和产品设计经验。</p>
-        <p style="margin-top:10px;">
-            &nbsp;&nbsp;&nbsp;&nbsp; 2018年，筱兰科技获得了布洛克资本的战略投资。当前，筱兰科技重点面向Ulord生态，结合自身的技术沉淀与布洛克资本长期以来对公链的专注研究和深刻理解，通过矿机、节点、矿场的研发设计，为上千个公链网络提供基础层的支持与保障。
-            我们的目标是建设更丰富、更有趣、更靠谱的区块链生态。
-            公司大本营位于上海，并在北京、厦门等设有分支机构。
-        </p>
+
+    <div class="banner" style="
+    width: 100%; min-width: 1220px;
+    height: 260px;
+    background-image: url(Content/img/about_new_meitu_1.jpg);
+    /*水平垂直居中*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;">
     </div>
-</div>
+    <center style="
+width: 100%; min-width: 1220px;">
+        <div class="more-container" style="margin-top: -150px;">
+            <div class="container">
+                <div class="status-box m-hide">
+                    <div class="box">
+                        <h6>已承载应用</h6>
+                        <div class="content-box"><span>13</span><span class="unit">款</span></div>
+                    </div>
+                    <div class="box">
+                        <h6>总算力值已达</h6>
+                        <div class="content-box"><span>32</span><span class="unit">Mh/s</span></div>
+                    </div>
+                    <div class="box">
+                        <h6>总存储量已达</h6>
+                        <div class="content-box"><span>840</span><span class="unit">TB</span></div>
+                    </div>
+                    <div class="box">
+                        <h6>节点数量达到</h6>
+                        <div class="content-box"><span>408</span><span class="unit">个</span></div>
+                    </div>
+                </div>
+                <div class="status-box-mobile m-show">
+                    <div class="box">
+                        <div class="content-box"><span>13</span><span class="unit">款</span></div>
+                        <h6>UDFS已承载应用</h6>
+                    </div>
+                    <div class="box">
+                        <div class="content-box"><span>32</span><span class="unit">个</span></div>
+                        <h6>已享受优质存储服务的客户数量</h6>
+                    </div>
+                    <div class="box">
+                        <div class="content-box"><span>840</span><span class="unit">TB</span></div>
+                        <h6>总存储量已达</h6>
+                    </div>
+                    <div class="box">
+                        <div class="content-box"><span>408</span><span class="unit">个</span></div>
+                        <h6>节点数量达到</h6>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+    </center>
+
+    <div class="about">
+        <div class="title">上海筱兰信息科技有限公司</div>
+        <div class="text">
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;
+                上海筱兰信息科技（Btcat）是一家专注于区块链设备设计与研发的科技公司，其核心团队成员有来自于腾讯、OPPO、华为、航天华拓等国内科技独角兽公司，在智能硬件、软件、Linux系统、服务器开发等方面有着深厚的软硬件技术研发和产品设计经验。
+            </p>
+            <p style="margin-top:10px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                2018年，筱兰科技获得了布洛克资本的战略投资。当前，筱兰科技重点面向Ulord生态，结合自身的技术沉淀与布洛克资本长期以来对公链的专注研究和深刻理解，通过矿机、节点、矿场的研发设计，为上千个公链网络提供基础层的支持与保障。
+                我们的目标是建设更丰富、更有趣、更靠谱的区块链生态。
+                公司大本营位于上海，并在北京、厦门等设有分支机构。
+            </p>
+        </div>
+    </div>
 
     <div class="black_news">
-   	  	<ul>
-    		<b>收款方式：</b>
-    	</ul>
-    	<ul>
-            <li>上海筱兰信息科技有限公司 , 建设银行 :  31050166360000002209</li>
+        <ul>
+            <b>收款方式：</b>
+        </ul>
+        <ul>
+            <li>上海筱兰信息科技有限公司 , 建设银行 : 31050166360000002209</li>
             <li>Omni（BTC版）USDT：15KLB2EPz5moXKccidJZ9NT5mFQ3NvqKA6</li>
-    		<li>BTC地址：15KLB2EPz5moXKccidJZ9NT5mFQ3NvqKA6</li>
-    	</ul>
-    	<ul>
-			<li>付完请发送邮件到<a href="mailto:service@btcat.cn" style="color:dodgerblue"> <u>service@btcat.cn</u></a>，注明交易号，txid，数量，手机号和收货地址。我们将一一核对。</li>
-    	</ul>
-	</div>
+            <li>BTC地址：15KLB2EPz5moXKccidJZ9NT5mFQ3NvqKA6</li>
+        </ul>
+        <ul>
+            <li>付完请发送邮件到<a href="mailto:service@btcat.cn" style="color:dodgerblue">
+                    <u>service@btcat.cn</u></a>，注明交易号，txid，数量，手机号和收货地址。我们将一一核对。</li>
+        </ul>
+    </div>
 
     <div class="footer">
-        
+
     </div>
-    
+
     <script>
-    	$(function(){
-        	$(".header").load("header.html");
-        	$(".footer").load("footer.html");			
-    	});
-		window.onload = function() {
-			$(".selected").removeClass("selected");
-			$(".nav6").addClass("selected")
-		}
-	</script>
+        $(function () {
+            $(".header").load("header.html");
+            $(".footer").load("footer.html");
+        });
+        window.onload = function () {
+            $(".selected").removeClass("selected");
+            $(".nav6").addClass("selected")
+        }
+    </script>
 
     <script>
         $(function () {
@@ -169,7 +170,7 @@
             if (userId != null) {
                 $('.top-mg-ul').hide();
                 $('.top-mg-user').show();
-                $('.top-mg-user .username').text(userName.substr(0,6));
+                $('.top-mg-user .username').text(userName.substr(0, 6));
             }
 
             //注册
@@ -186,7 +187,7 @@
                     return;
                 }
                 var regMobile = /^1[23456789]\d{9}$/;
-                var regEmail=/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
+                var regEmail = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
                 var reg = /[@]/gi;
                 if (reg.test(account)) {
                     if (!regEmail.test(account)) {
@@ -331,7 +332,7 @@
                 $(".footer").html(resultFooter);
             }
 
-            if (v == "tw"){
+            if (v == "tw") {
                 var result = setFanti($(".header").html());
                 $(".header").html(result);
 
@@ -355,4 +356,5 @@
         })();
     </script>
 </body>
+
 </html>

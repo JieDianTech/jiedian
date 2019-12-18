@@ -1,29 +1,5 @@
 @charset "UTF-8";
 
-html {
-	overflow: -moz-hidden-unscrollable;
-	height: 100%
-}
-
-body::-webkit-scrollbar {
-	display: none
-}
-
-body {
-	-ms-overflow-style: none;
-	height: 100%;
-	overflow: auto;
-	font-size: 16px;
-	background: transparent;
-	font-family: PingFangSC-Regular,Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;
-	overflow-x: hidden
-}
-
-a,a:active,a:hover,a:link {
-	text-decoration: none;
-	color: #bcc0e6
-}
-
 .page-enter {
 	opacity: 0
 }
@@ -236,21 +212,6 @@ input[type=number][data-v-1fb601b9] {
 	font-size: 14px!important;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%)
-}
-
-.el-cascader-menus.el-popper[data-v-1fb601b9] {
-	border: 1px solid #343972
-}
-
-.el-cascader-menus.el-popper .popper__arrow[data-v-1fb601b9],.el-cascader-menus.el-popper .popper__arrow[data-v-1fb601b9]:after {
-	border-bottom-color: #343972
-}
-
-.el-cascader-menus.el-popper .el-cascader-menu[data-v-1fb601b9] {
-	border-right: none;
-	background: -webkit-gradient(linear,left top,right top,from(#8acafc),to(#6ea4fc));
-	background: -webkit-linear-gradient(left,#8acafc,#6ea4fc);
-	background: linear-gradient(90deg,#8acafc,#6ea4fc)
 }
 
 .el-cascader-menus.el-popper .el-cascader-menu .el-cascader-menu__item[data-v-1fb601b9] {
