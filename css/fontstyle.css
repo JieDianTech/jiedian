@@ -1,0 +1,82 @@
+.fSizeOne{
+    font-size: 40px;
+}
+.fStyleTwo{
+    font-size: 32px;
+}
+.fStyleThree{
+    font-size: 30px;
+}
+.fStyleFour{
+    font-size: 24px;
+}
+.fStyleFive{
+    font-size: 18px;
+}
+.fStyleSix{
+    font-size: 16px;
+}
+.fStyleServen{
+    font-size: 14px;
+    font-weight: bold;
+}
+.fStyleEight{
+    font-size: 12px;
+}
+.fStyleNine{
+    font-size: 72px;
+}
+.fStyleTen{
+    font-size: 25px;
+}
+.fStyleEleven{
+    font-size: 20px;
+}
+.fColorOne{
+    color: #fff;
+}
+.fColorTwo{
+    color: #000;
+}
+.fColorThree{
+    color:#00a0e9;
+}
+.fColorFour{
+    color:#212121;
+}
+.fColorfive{
+    color:#666;
+}
+.fColorSix{
+    color:#ff6538;
+}
+.fColorServen{
+    color:#8f8f8f;
+}
+.fColorEight{
+    color:#ccc;
+}
+.fWeight{
+    font-weight: bold;
+}
+.fTOne{
+    text-align: center;
+}
+.fTTwo{
+    text-align: left;
+}
+.fLineHOne{
+    line-height: 40px;
+}
+.fLineHTwo{
+    line-height: 25px;
+}
+.fLineHThree{
+    line-height: 14px;
+}
+.fWrap{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

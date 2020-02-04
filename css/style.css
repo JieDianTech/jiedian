@@ -1,0 +1,86 @@
+.nav{
+    height: 50px;
+    background-color: #2b2b2b;
+}
+.box{
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.corpTitle{
+    position: absolute;
+    width: 1200px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+}
+.item{
+    float: left;
+    width: 120px;
+    height: 50px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+.item:hover{
+    background-color: #009fe9;
+}
+.box .on{
+    background-color: #009fe9;
+}
+
+/* 底部 */
+.footer{
+    position: relative;
+    height: 391px;
+    border-top: 14px solid #000;
+    border-bottom: 14px solid #000;
+    background: url('../img/foot_bg.jpg') no-repeat center;
+}
+.ftAll{
+    position: absolute;
+    width: 1200px;
+    top: 86px;
+}
+.footCon{
+    float: left;
+    width: 300px;
+    color: #fff;
+}
+.footBri, .footTact{
+    margin-right: 100px;
+}
+.footBri{
+    margin-left: 50px;
+}
+.footCon b{
+    line-height: 35px;
+}
+.footBri p:nth-of-type(2){
+    line-height: 25px;
+}
+.footTact div p{
+    line-height: 40px;
+}
+.footTact i{
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+.footCase ul li{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.footCase li img{
+    width: 73px;
+}
+
+.slice{
+    /* display: none; */
+    width: 100%;
+    position: relative;
+}

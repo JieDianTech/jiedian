@@ -1,0 +1,376 @@
+#main{    
+    width: 100%;
+}
+/* 轮播部分 */
+.marine{
+    position: relative;
+    width: 100%;
+    height: 800px;     
+}
+.marinDeg{
+    position: relative;
+    height: 800px;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: all linear 2s;
+}
+.marineOne{
+    position: relative;
+    height: 100%;
+    background: url('../img/marine_bg1.jpg') no-repeat center/cover; 
+    transform: rotateY(180deg);
+}
+.marineTwo{
+    position: relative;
+    top: -800px;
+    height: 100%;
+    background: url('../img/marine_bg2.jpg') no-repeat center/cover;
+    
+}
+.marOneRe{
+    position: relative;
+    top: 250px;
+    text-align: center;
+}
+.marOneRe>p{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.marOneRe span{
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.marOneRe div{
+    margin-top: 40px; 
+}
+.marOneRe div p{
+    line-height: 30px;
+}
+.marOneRe a{
+    display: inline-block;
+    width: 162px;
+    height: 50px;
+    margin-top: 45px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.marTwoRe{
+    overflow: hidden;
+}
+.marTwoRe p:first-child{
+    margin-top: 320px;
+    margin-bottom: 50px;
+}
+.marTwoRe p{
+    text-align: center;
+    line-height: 30px;
+}
+.marTwoRe a{
+    display: block;
+    width: 162px;
+    height: 50px;
+    margin: 45px auto;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.marBtn{
+    position: absolute;
+    top: 45%;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    z-index: 99;
+}
+.marBtnLeft{
+    left: 40px;
+    background: url('../img/left.png') rgba(0,0,0,.1);
+}
+.marBtnRight{
+    right: 40px;
+    background: url('../img/right.png') rgba(0,0,0,.1);
+}
+.marBtn:hover{
+    background-color: rgba(0,0,0,.3);
+}
+/* 内容区域 */
+.content{
+    height: 2158px;
+    background: url('../img/index_con_bg.jpg') no-repeat center;
+}
+/* 内容服务项目部分 */
+.contentJect{
+    position: relative;
+    width: 1200px;
+    height: 775px;
+    overflow: hidden;
+}
+.contentOne{
+    position: absolute;
+    width: 270px;
+    top: 127px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.contentOne p{
+    text-align: center;
+    line-height: 34px;
+}
+.contentTwo{
+    position: relative;
+    top: 339px;    
+}
+.conTwoRe{
+    float: left;
+    position: relative;
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    background-color: white; 
+}
+.conTwoRe:hover{
+    background-color: cornsilk;
+}
+.conTwoRe+.conTwoRe{
+    position: relative;    
+    margin-left: 30px;
+}
+.conTwoAb{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+.conTwoAb img{
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+.conTwoAb p{
+    white-space: nowrap;
+    line-height: 26px;
+}
+/* 内容网站解决方案 */
+.contentSch{
+    position: relative;
+    width: 1200px;
+    height: 1316px;
+}
+.contentSch .contentThree{
+    position: absolute;
+    top: 178px;
+    left: 10px;
+    width: 400px;
+}
+.contentThree p:nth-child(1){
+    margin-bottom: 30px;
+}
+.contentThree p+p{
+    line-height: 25px;
+}
+.contentSch .contentFour{
+    position: absolute;
+    top: 413px;
+    left: 10px;
+}
+.contentFour a{
+    display: block;
+    width: 170px;
+    height: 50px;
+    background-color: #2ebbee;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 30px;
+}
+.contentSch .contentFive{
+    position: absolute;
+    top: 73px;
+    left: 460px;
+}
+.contentSch .contentSix{
+    position: absolute;
+    top: 763px;
+    left: 10px;
+}
+.contentSch .contentServe{
+    position: absolute;
+    top: 875px;
+    left: 662px;
+    width: 400px;
+}
+.contentServe p:nth-child(1){
+    margin-bottom: 30px;
+}
+.contentServe p+p{
+    line-height: 25px;
+}
+.contentSch .contentEight{
+    position: absolute;
+    top: 1124px;
+    left: 662px;
+}
+.contentEight a{
+    display: block;
+    width: 170px;
+    height: 50px;
+    background-color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+/* 关于我们 */
+.aboutMy{
+    height: 899px;
+}
+.aboutMyTitle{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, 0);
+}
+.aboutMyTitle p{
+    text-align: center;
+}
+.aboutMyTitle p:nth-child(1){
+    margin-bottom: 35px;
+}
+.aboutMyTitle p+p{
+    line-height: 25px;
+}
+.aboutMyBox{
+    position: absolute;
+    top: 310px;
+    width: 1200px;
+}
+.aboutMyBox .aboutMyCon{
+    float: left;
+    width: 300px;
+    text-align: center;
+}
+.aboutMyBox .aboutMyCon+.aboutMyCon{
+    margin-left: 150px;
+}
+.aboutMyCon img{
+    height: 167px;
+}
+.aboutMyCon p{
+    margin-top: 20px;
+    text-align: center;
+}
+.aboutMyCon p:nth-child(1){
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.aboutMyCon p+p{
+    line-height: 20px;
+}
+.aboutMyPar{
+    position: absolute;
+    width: 170px;
+    top: 665px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.aboutMyPar a{
+    display: block;
+    width: 170px;
+    height: 50px;
+    background-color: #2ebbee;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 30px;
+}
+/* 信息 */
+.aboutInfo{
+    height: 406px;
+    background: url('../img/aboutInfo_bg.jpg') no-repeat center/cover
+}
+.aboutInfo .infoCon{
+    margin-top: 126px;
+    height: 155px;
+}
+.aboutInfo .infoRe{
+    float: left;
+    position: relative;
+    width: 270px;
+    height: 100%;
+    background-color: #000;
+}
+.aboutInfo .infoRe+.infoRe{
+    margin-left: 40px;
+}
+.infoAb{
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.infoAb p{
+    width: 270px;
+    text-align: center;
+}
+.infoAb p:nth-child(2){
+    line-height: 30px;
+}
+/* 客户评价 */
+.cusEval{
+    height: 617px;
+}
+.cusHead{
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 727px;
+}
+.cusHead p{
+    text-align: center;
+}
+.cusHead p:nth-child(1){
+    margin-bottom: 45px;
+}
+.cusimg{
+    position: absolute;
+    width: 140px;
+    top: 340px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    text-align: center;
+}
+/* @keyframes run{
+    0%{
+        transform: rotateY(180deg);
+    }
+    33%{
+        transform: rotateY(180deg);
+    }
+    66%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+@keyframes runOne{
+    0%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+@keyframes none{
+    0%{
+        
+    }
+    100%{
+        
+    }
+} */
